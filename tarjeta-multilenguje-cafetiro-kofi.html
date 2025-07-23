@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tarjeta de Amaneceres Multilingüe</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background: linear-gradient(to bottom, #FFD580, #FF7E5F);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  .card {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 400px;
+    width: 100%;
+  }
+  h1 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  select, input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    margin: 8px 0;
+    font-size: 1rem;
+  }
+  button {
+    padding: 10px 20px;
+    background: #ff6b6b;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  .donaciones {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .donaciones a button {
+    width: 100%;
+  }
+  .result {
+    margin-top: 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <select id="idioma" onchange="cambiarIdioma(this.value)">
+      <option value="es">🇪🇸 Español</option>
+      <option value="en">🇬🇧 English</option>
+      <option value="pt">🇵🇹 Português</option>
+      <option value="fr">🇫🇷 Français</option>
+      <option value="it">🇮🇹 Italiano</option>
+      <option value="de">🇩🇪 Deutsch</option>
+      <option value="ja">🇯🇵 日本語</option>
+      <option value="ar">🇸🇦 العربية</option>
+    </select>
+
+    <h1 id="titulo">🌅 Calcula tus amaneceres</h1>
+    <label id="lbl-fecha" for="fecha">Fecha especial:</label>
+    <input type="date" id="fecha">
+
+    <label id="lbl-mensaje" for="mensaje">Mensaje personal:</label>
+    <textarea id="mensaje" rows="3" placeholder="Escribe aquí tu dedicatoria..."></textarea>
+
+    <button id="btn-calcular" onclick="calcular()">Calcular</button>
+    <div class="result" id="resultado"></div>
+    <div id="dedicatoria" style="margin-top:10px; font-style:italic;"></div>
+
+    <div class="donaciones">
+      <!-- Botón Cafecito -->
+      <a href="https://cafecito.app/TU_USUARIO" target="_blank" style="text-decoration:none;">
+        <button style="background:#6C4AB6;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;">
+          ☕ Invítame un Cafecito
+        </button>
+      </a>
+      <!-- Botón Ko-fi -->
+      <a href="https://ko-fi.com/TU_USUARIO" target="_blank" style="text-decoration:none;">
+        <button style="background:#29ABE0;color:#fff;border:none;border-radius:8px;font-size:1rem;cursor:pointer;">
+          🌍 Buy me a Coffee on Ko‑fi
+        </button>
+      </a>
+    </div>
+  </div>
+
+<script>
+const textos = {
+  es: {
+    titulo: "🌅 Calcula tus amaneceres",
+    fecha: "Fecha especial:",
+    mensaje: "Mensaje personal:",
+    boton: "Calcular",
+    resultado: (d) => `¡Han pasado ${d} amaneceres!`
+  },
+  en: {
+    titulo: "🌅 Calculate your sunrises",
+    fecha: "Special date:",
+    mensaje: "Personal message:",
+    boton: "Calculate",
+    resultado: (d) => `${d} sunrises have passed!`
+  },
+  pt: {
+    titulo: "🌅 Calcule seus amanheceres",
+    fecha: "Data especial:",
+    mensaje: "Mensagem pessoal:",
+    boton: "Calcular",
+    resultado: (d) => `Já se passaram ${d} amanheceres!`
+  },
+  fr: {
+    titulo: "🌅 Calculez vos levers de soleil",
+    fecha: "Date spéciale :",
+    mensaje: "Message personnel :",
+    boton: "Calculer",
+    resultado: (d) => `${d} levers de soleil se sont écoulés !`
+  },
+  it: {
+    titulo: "🌅 Calcola le tue albe",
+    fecha: "Data speciale:",
+    mensaje: "Messaggio personale:",
+    boton: "Calcola",
+    resultado: (d) => `Sono passate ${d} albe!`
+  },
+  de: {
+    titulo: "🌅 Berechne deine Sonnenaufgänge",
+    fecha: "Besonderes Datum:",
+    mensaje: "Persönliche Nachricht:",
+    boton: "Berechnen",
+    resultado: (d) => `${d} Sonnenaufgänge sind vergangen!`
+  },
+  ja: {
+    titulo: "🌅 あなたの日の出を計算する",
+    fecha: "特別な日:",
+    mensaje: "メッセージ:",
+    boton: "計算する",
+    resultado: (d) => `${d} 回の日の出が経ちました！`
+  },
+  ar: {
+    titulo: "🌅 احسب شروق الشمس الخاصة بك",
+    fecha: "تاريخ مميز:",
+    mensaje: "رسالة شخصية:",
+    boton: "احسب",
+    resultado: (d) => `لقد مر ${d} شروق شمس!`
+  }
+};
+
+let idiomaActual = 'es';
+
+function cambiarIdioma(lang) {
+  idiomaActual = lang;
+  document.getElementById('titulo').innerText = textos[lang].titulo;
+  document.getElementById('lbl-fecha').innerText = textos[lang].fecha;
+  document.getElementById('lbl-mensaje').innerText = textos[lang].mensaje;
+  document.getElementById('btn-calcular').innerText = textos[lang].boton;
+  document.getElementById('resultado').innerText = '';
+  document.getElementById('dedicatoria').innerText = '';
+}
+
+function calcular() {
+  const fecha = document.getElementById('fecha').value;
+  const mensaje = document.getElementById('mensaje').value;
+  if(!fecha) {
+    alert("Selecciona una fecha");
+    return;
+  }
+  const inicio = new Date(fecha);
+  const hoy = new Date();
+  const diffMs = hoy - inicio;
+  const dias = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+  document.getElementById('resultado').innerText = textos[idiomaActual].resultado(dias.toLocaleString());
+  document.getElementById('dedicatoria').innerText = mensaje ? `💌 ${mensaje}` : '';
+}
+</script>
+</body>
+</html>
