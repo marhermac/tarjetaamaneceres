@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resultado de Amaneceres</title>
+<style>
+  body {
+    background: linear-gradient(to bottom, #FFD580, #FF7E5F);
+    font-family: sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    padding: 20px;
+  }
+  .resultado {
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(5px);
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 400px;
+  }
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+  <div class="resultado">
+    <h1 id="texto"></h1>
+    <p id="dedicatoria"></p>
+    <a href="index.html">🔙 Volver</a>
+  </div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const dias = params.get('dias');
+  const mensaje = params.get('mensaje');
+  document.getElementById('texto').innerText = `🌅 ¡Han pasado ${dias} amaneceres!`;
+  if(mensaje){
+    document.getElementById('dedicatoria').innerText = `💌 ${mensaje}`;
+  }
+</script>
+</body>
+</html>
