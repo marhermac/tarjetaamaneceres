@@ -3,67 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <title>RIGA – Ranking de Impacto Glucémico</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; }
-    h1 { color: #2c3e50; }
-    .buscador input { width: 100%; padding: 8px; margin: 10px 0; font-size: 16px; }
-    .resultado { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
-    .riga { font-weight: bold; font-size: 18px; margin-top: 5px; }
-    .verde { color: #27ae60; }
-    .amarillo { color: #f1c40f; }
-    .rojo { color: #e74c3c; }
-    footer { margin-top: 30px; font-size: 12px; color: #555; }
+    body {
+      font-family: system-ui, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fafafa;
+    }
+
+    header {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      display: flex;
+      align-items: baseline;
+      gap: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 46px;
+      font-weight: 700;
+    }
+
+    header span {
+      font-size: 36px;
+      color: #444;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 30px;
+    }
+
+    .intro {
+           padding: 20px;
+      min-height: 300px;
+    }
+
+    .buscador input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .resultado {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 10px;
+      background: white;
+    }
+
+    .verde { color: #2ecc71; font-weight: bold; }
+    .amarillo { color: #f1c40f; font-weight: bold; }
+    .rojo { color: #e74c3c; font-weight: bold; }
+
+    footer {
+      padding: 20px;
+      font-size: 13px;
+      color: #555;
+      border-top: 1px solid #ddd;
+    }
   </style>
 </head>
+
 <body>
 
-  <h1>RIGA – Ranking de Impacto Glucémico de Alimentos</h1>
-  <p>Buscá alimentos y conocé su impacto glucémico estimado.</p>
+<header>
+  <h1>RIGA</h1>
+  <span>Ranking de Impacto Glucémico de Alimentos</span>
+</header>
 
-  <div class="buscador">
-    <input type="text" placeholder="Ej: arroz, manzana, pan…" oninput="buscarAlimento(this.value)">
-  </div>
+<main>
+  <section class="intro">
+    <p>
+      RIGA es una herramienta web gratuita que permite orientar elecciones
+      alimentarias a partir del impacto glucémico estimado de los alimentos.
+    </p>
+    <p>
+      Está pensada para salud pública, educación y acompañamiento en contextos
+      de obesidad, diabetes y enfermedades metabólicas.
+     
+    <p>
+     <strong> Qué es el Índice Glucémico?</strong>
+     </p>
+		
+     <p>
+      El índice glucémico (IG) indica qué tan rápido un alimento eleva el azúcar en sangre después de consumirlo.
+     </p>
+      <p> 
+      Los alimentos con IG alto provocan picos rápidos de glucosa e insulina.
+      Los de IG medio generan una respuesta moderada.
+      Los de IG bajo producen una subida más lenta y estable.
 
-  <div id="resultados"></div>
+      Mantener una respuesta glucémica más estable puede ayudar a mejorar el control del apetito, la energía diaria            y la salud metabólica, especialmente en personas con obesidad, prediabetes o diabetes.
+      </p>
+     <p> 
+     RIGA clasifica los alimentos según su impacto glucémico para ayudarte a elegir mejor.
+     </p>
+     <p>
+  <strong>¿Qué efectos tienen los picos de glucosa e insulina en el cuerpo?</strong>
+     </p>
+     <p>
+ Hacen que el azúcar en sangre suba y baje muy rápido, obligando al cuerpo a responder de forma intensa y repetida.
+Con el tiempo, estos picos pueden aumentar el hambre, favorecer el aumento de peso y aumentar el riesgo de diabetes tipo 2 y enfermedades cardiovasculares.
+     </p>   
 
-  <footer>
-    RIGA es una herramienta informativa y educativa. No reemplaza el asesoramiento médico ni nutricional.
-    <br>Fuentes: Argenfood, tablas de índice glucémico, Open Food Facts.
-  </footer>
 
-  <script>
-    // Datos de ejemplo
-    const alimentos = [
-      { nombre: "Manzana roja", categoria: "Frutas", riga: { estrellas: 3, color: "verde" } },
-      { nombre: "Arroz blanco cocido", categoria: "Cereales", riga: { estrellas: 1, color: "rojo" } },
-      { nombre: "Pan integral", categoria: "Cereales", riga: { estrellas: 2, color: "amarillo" } }
-    ];
 
-    function renderResultados(resultados) {
-      const container = document.getElementById('resultados');
-      container.innerHTML = '';
-      resultados.forEach(a => {
-        const div = document.createElement('div');
-        div.className = 'resultado';
+
+<svg viewBox="0 0 520 330" width="100%" max-width="520">
+
+  <!-- Ejes -->
+  <line x1="60" y1="30" x2="60" y2="260" stroke="#333"/>
+  <line x1="60" y1="260" x2="480" y2="260" stroke="#333"/>
+
+  <!-- Etiquetas eje Y -->
+  <text x="-30" y="150" font-size="12" transform="rotate(-90 30 150)">
+    Nivel de glucosa en sangre
+  </text>
+
+  <!-- Etiquetas eje X -->
+  <text x="200" y="310" font-size="12">
+    Tiempo después de la ingesta
+  </text>
+
+  <!-- Marcas de tiempo eje X -->
+  <text x="55" y="280" font-size="10">0</text>
+  <text x="155" y="280" font-size="10">30 min</text>
+  <text x="275" y="280" font-size="10">1 h</text>
+  <text x="415" y="280" font-size="10">2 h</text>
+
+  <!-- Curva IG alto (rojo) -->
+  <path d="M60 260 C140 60, 230 60, 360 260"
+        fill="none" stroke="#e53935" stroke-width="3"/>
+
+  <!-- Curva IG medio (amarillo) -->
+  <path d="M60 260 C170 140, 270 140, 390 260"
+        fill="none" stroke="#fbc02d" stroke-width="3"/>
+
+  <!-- Curva IG bajo (verde) -->
+  <path d="M60 260 C200 200, 320 200, 450 260"
+        fill="none" stroke="#43a047" stroke-width="3"/>
+
+  <!-- Leyenda -->
+  <circle cx="90" cy="30" r="5" fill="#e53935"/>
+  <text x="105" y="34" font-size="12">IG alto</text>
+
+  <circle cx="170" cy="30" r="5" fill="#fbc02d"/>
+  <text x="185" y="34" font-size="12">IG medio</text>
+
+  <circle cx="270" cy="30" r="5" fill="#43a047"/>
+  <text x="285" y="34" font-size="12">IG bajo</text>
+
+</svg>
+
+
+  </section>
+
+  <section>
+    <div class="buscador">
+      <input
+        type="text"
+        placeholder="Buscar alimento…"
+        oninput="buscar(this.value)"
+      />
+    </div>
+
+    <div id="resultados"></div>
+  </section>
+</main>
+
+<footer>
+  RIGA es una herramienta informativa y educativa.
+  No reemplaza el asesoramiento médico ni nutricional.
+</footer>
+
+<script>
+  const alimentos = [
+    { nombre: "Manzana", color: "verde", estrellas: 3 },
+    { nombre: "Pan integral", color: "amarillo", estrellas: 2 },
+    { nombre: "Arroz blanco", color: "rojo", estrellas: 1 }
+  ];
+
+  function buscar(texto) {
+    const cont = document.getElementById("resultados");
+    cont.innerHTML = "";
+
+    alimentos
+      .filter(a => a.nombre.toLowerCase().includes(texto.toLowerCase()))
+      .forEach(a => {
+        const div = document.createElement("div");
+        div.className = "resultado";
         div.innerHTML = `
           <strong>${a.nombre}</strong><br>
-          Categoría: ${a.categoria}<br>
-          <div class="riga ${a.riga.color}">${a.riga.color === 'verde' ? '🟢' : a.riga.color === 'amarillo' ? '🟡' : '🔴'} ${'★'.repeat(a.riga.estrellas)}</div>
+          <span class="${a.color}">
+            ${a.color === "verde" ? "🟢" : a.color === "amarillo" ? "🟡" : "🔴"}
+            ${"★".repeat(a.estrellas)}
+          </span>
         `;
-        container.appendChild(div);
+        cont.appendChild(div);
       });
-    }
-
-    function buscarAlimento(texto) {
-      const resultados = alimentos.filter(a => a.nombre.toLowerCase().includes(texto.toLowerCase()));
-      renderResultados(resultados);
-    }
-
-    // Mostrar todos al inicio
-    renderResultados(alimentos);
-  </script>
-
+  }
+</script>
 </body>
 </html>
-
-
