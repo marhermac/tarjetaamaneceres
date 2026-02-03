@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>RIGA – Ranking de Impacto Glucémico de Alimentos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>RIGA – Ranking de Impacto Glucémico de Alimentos</h2>
+
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Escribí una letra..."
+  list="suggestions"
+/>
+
+<datalist id="suggestions"></datalist>
+
+<table id="dataTable">
+  <thead>
+    <tr>
+      <th>Alimento</th>
+      <th>Porción</th>
+      <th>Semaforo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Se carga desde el CSV -->
+  </tbody>
+</table>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <p id="modalText"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 
