@@ -2,44 +2,67 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>RIGA – Ranking de Impacto Glucémico de Alimentos</title>
-  <link rel="stylesheet" href="style.css">
+  <title>RIGA – Ranking de Impacto Glucémico</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    h1 { color: #2c3e50; }
+    .buscador input { width: 100%; padding: 8px; margin: 10px 0; font-size: 16px; }
+    .resultado { border: 1px solid #ccc; padding: 10px; margin-bottom: 10px; border-radius: 5px; }
+    .riga { font-weight: bold; font-size: 18px; margin-top: 5px; }
+    .verde { color: #27ae60; }
+    .amarillo { color: #f1c40f; }
+    .rojo { color: #e74c3c; }
+    footer { margin-top: 30px; font-size: 12px; color: #555; }
+  </style>
 </head>
 <body>
 
-<h2>RIGA – Ranking de Impacto Glucémico de Alimentos</h2>
+  <h1>RIGA – Ranking de Impacto Glucémico de Alimentos</h1>
+  <p>Buscá alimentos y conocé su impacto glucémico estimado.</p>
 
-<input
-  type="text"
-  id="searchInput"
-  placeholder="Escribí una letra..."
-  list="suggestions"
-/>
-
-<datalist id="suggestions"></datalist>
-
-<table id="dataTable">
-  <thead>
-    <tr>
-      <th>Alimento</th>
-      <th>Porción</th>
-      <th>Semaforo</th>
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Se carga desde el CSV -->
-  </tbody>
-</table>
-
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="close">&times;</span>
-    <p id="modalText"></p>
+  <div class="buscador">
+    <input type="text" placeholder="Ej: arroz, manzana, pan…" oninput="buscarAlimento(this.value)">
   </div>
-</div>
 
-<script src="script.js"></script>
+  <div id="resultados"></div>
+
+  <footer>
+    RIGA es una herramienta informativa y educativa. No reemplaza el asesoramiento médico ni nutricional.
+    <br>Fuentes: Argenfood, tablas de índice glucémico, Open Food Facts.
+  </footer>
+
+  <script>
+    // Datos de ejemplo
+    const alimentos = [
+      { nombre: "Manzana roja", categoria: "Frutas", riga: { estrellas: 3, color: "verde" } },
+      { nombre: "Arroz blanco cocido", categoria: "Cereales", riga: { estrellas: 1, color: "rojo" } },
+      { nombre: "Pan integral", categoria: "Cereales", riga: { estrellas: 2, color: "amarillo" } }
+    ];
+
+    function renderResultados(resultados) {
+      const container = document.getElementById('resultados');
+      container.innerHTML = '';
+      resultados.forEach(a => {
+        const div = document.createElement('div');
+        div.className = 'resultado';
+        div.innerHTML = `
+          <strong>${a.nombre}</strong><br>
+          Categoría: ${a.categoria}<br>
+          <div class="riga ${a.riga.color}">${a.riga.color === 'verde' ? '🟢' : a.riga.color === 'amarillo' ? '🟡' : '🔴'} ${'★'.repeat(a.riga.estrellas)}</div>
+        `;
+        container.appendChild(div);
+      });
+    }
+
+    function buscarAlimento(texto) {
+      const resultados = alimentos.filter(a => a.nombre.toLowerCase().includes(texto.toLowerCase()));
+      renderResultados(resultados);
+    }
+
+    // Mostrar todos al inicio
+    renderResultados(alimentos);
+  </script>
+
 </body>
 </html>
 
