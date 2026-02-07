@@ -3,22 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Nombre | Data Cleaning Specialist</title>
+    <title>Portfolio | Data Cleaning Specialist</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
     <style>
-        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f4f7f6; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: var(--primary); line-height: 1.6; }
-        header { background: white; padding: 2rem; text-align: center; border-bottom: 3px solid var(--accent); }
-        .container { max-width: 900px; margin: auto; padding: 20px; }
-        .hero h1 { margin: 0; color: var(--primary); }
-        .hero p { font-size: 1.2rem; color: #7f8c8d; }
-        .section { background: white; padding: 2rem; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .badge-grid { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 1rem; }
-        .badge { background: #ebedef; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
-        .project-card { border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 1.5rem; }
-        .btn { display: inline-block; background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
-        .social-links a { font-size: 1.5rem; margin: 0 10px; color: var(--primary); transition: 0.3s; }
-        .social-links a:hover { color: var(--accent); }
+        :root {
+            --primary: #0f172a;
+            --accent: #3b82f6;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --bg: #f8fafc;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, sans-serif;
+            margin: 0;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--white);
+            padding: 4rem 1rem;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin: 1rem 0 2rem;
+        }
+
+        .section {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-left: 4px solid var(--accent);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* CUADRICULA DE CREDENCIALES */
+        .badges-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            align-items: start;
+            margin-top: 1.5rem;
+        }
+
+        .project-card {
+            border: 1px solid #e2e8f0;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: var(--text-muted);
+            font-size: 1.75rem;
+            margin: 0 15px;
+            transition: color 0.2s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        .tag {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 4px 12px;
+            border-radius: 9999px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -26,7 +122,7 @@
 <header>
     <div class="hero">
         <h1>[TU NOMBRE COMPLETO]</h1>
-        <p>Data Cleaning Specialist | Python & Pandas Expert</p>
+        <p>Especialista en Data Wrangling & Limpieza Masiva de Datos</p>
         <div class="social-links">
             <a href="[LINK-LINKEDIN]"><i class="fab fa-linkedin"></i></a>
             <a href="https://github.com[TU-USUARIO]"><i class="fab fa-github"></i></a>
@@ -36,53 +132,49 @@
 </header>
 
 <div class="container">
-    <!-- Sobre Mí -->
+
+    <!-- RESUMEN -->
     <div class="section">
-        <h2><i class="fas fa-user"></i> Sobre mí</h2>
-        <p>Especialista en la preparación y normalización masiva de datos. Ayudo a Data Scientists y empresas a ahorrar el 80% de su tiempo automatizando la limpieza de bases de datos complejas mediante scripts de Python.</p>
-        <div class="badge-grid">
-            <span class="badge">Python</span>
-            <span class="badge">Pandas</span>
-            <span class="badge">Data Wrangling</span>
-            <span class="badge">Excel Avanzado</span>
-            <span class="badge">SQL</span>
+        <h2><i class="fas fa-terminal"></i> Mi Especialidad</h2>
+        <p>Me enfoco en el trabajo técnico que el 80% de los analistas evita: <strong>preparar datos crudos para que sean útiles</strong>. Automatizo la limpieza de datasets complejos con Python, asegurando integridad total para modelos de Machine Learning y BI.</p>
+        <div style="margin-top: 1rem;">
+            <span class="tag">Python / Pandas</span>
+            <span class="tag">RegEx</span>
+            <span class="tag">Data Validation</span>
+            <span class="tag">ETL</span>
         </div>
     </div>
 
-    <!-- Proyectos Destacados -->
+    <!-- CERTIFICACIONES (AQUÍ VAN LOS BADGES) -->
     <div class="section">
-        <h2><i class="fas fa-code"></i> Proyectos de Portafolio</h2>
+        <h2><i class="fas fa-award"></i> Credenciales Verificadas</h2>
+        <p>Certificaciones oficiales obtenidas a través de <strong>Credly</strong>:</p>
         
-        <div class="project-card">
-            <h3>Limpieza Masiva de Base de Ventas (500k registros)</h3>
-            <p>Normalización de 100 columnas, tratamiento de nulos y estandarización de nomenclaturas geográficas utilizando Pandas.</p>
-            <a href="[LINK-A-TU-REPOSITORIO]" class="btn">Ver Código en GitHub</a>
-        </div>
+        <div class="badges-container">
+            
+            <!-- PEGA AQUÍ TUS EMBED CODES DE CREDLY (Uno debajo del otro) -->
+            
+            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="33fac871-6aa7-4db9-aadc-bde9c168f668" data-share-badge-host="https://www.credly.com"></div>
+            
+            <!-- FIN DE TUS EMBED CODES -->
 
-        <div class="project-card">
-            <h3>Script de Automatización de Nomenclatura</h3>
-            <p>Desarrollo de un diccionario inteligente para corrección de errores tipográficos en nombres de ciudades y países.</p>
-            <a href="#" class="btn">Ver Repositorio</a>
         </div>
     </div>
 
-    <!-- Certificaciones -->
+    <!-- PROYECTO DESTACADO -->
     <div class="section">
-        <h2><i class="fas fa-certificate"></i> Certificaciones</h2>
-        <p>Validadas en <strong>Credly</strong>:</p>
-        <ul>
-            <li><a href="[LINK-CREDLY-1]">Nombre de la Certificación 1</a></li>
-            <li><a href="[LINK-CREDLY-2]">Nombre de la Certificación 2</a></li>
-        </ul>
+        <h2><i class="fas fa-flask"></i> Laboratorio de Datos</h2>
+        <div class="project-card">
+            <h3>E-commerce Data Cleaning Challenge</h3>
+            <p>Procesamiento de 5,000 registros con inconsistencias en 100 columnas. Normalización de monedas, fechas y limpieza profunda de texto con Pandas.</p>
+            <a href="https://github.com[TU-USUARIO]/[REPO]" class="btn">Ver Repositorio del Proyecto</a>
+        </div>
     </div>
 
-    <!-- Contacto -->
-    <div class="section" style="text-align: center;">
-        <h2>¿Tenés una base de datos "sucia"?</h2>
-        <p>Estoy disponible para proyectos en Workana o colaboraciones directas.</p>
-        <a href="mailto:tu-email@gmail.com" class="btn" style="background: #27ae60;">Enviame un Mail</a>
-    </div>
 </div>
+
+<!-- SCRIPT DE CREDLY (Carga una sola vez para todos los badges) -->
+<script type="text/javascript" async src="//://cdn.credly.com"></script>
 
 </body>
 </html>
