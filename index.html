@@ -1,215 +1,88 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>RIGA – Ranking de Impacto Glucémico</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/styles.css">
-
-  <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #fafafa;
-    }
-
-    header {
-      padding: 20px;
-      border-bottom: 1px solid #ddd;
-      display: flex;
-      align-items: baseline;
-      gap: 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 46px;
-      font-weight: 700;
-    }
-
-    header span {
-      font-size: 36px;
-      color: #444;
-    }
-
-    main {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
-      padding: 30px;
-    }
-
-    .intro {
-           padding: 20px;
-      min-height: 300px;
-    }
-
-    .buscador input {
-      width: 100%;
-      padding: 10px;
-      font-size: 16px;
-      margin-bottom: 15px;
-    }
-
-    .resultado {
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 10px;
-      background: white;
-    }
-
-    .verde { color: #2ecc71; font-weight: bold; }
-    .amarillo { color: #f1c40f; font-weight: bold; }
-    .rojo { color: #e74c3c; font-weight: bold; }
-
-    footer {
-      padding: 20px;
-      font-size: 13px;
-      color: #555;
-      border-top: 1px solid #ddd;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu Nombre | Data Cleaning Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root { --primary: #2c3e50; --accent: #3498db; --bg: #f4f7f6; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background: var(--bg); color: var(--primary); line-height: 1.6; }
+        header { background: white; padding: 2rem; text-align: center; border-bottom: 3px solid var(--accent); }
+        .container { max-width: 900px; margin: auto; padding: 20px; }
+        .hero h1 { margin: 0; color: var(--primary); }
+        .hero p { font-size: 1.2rem; color: #7f8c8d; }
+        .section { background: white; padding: 2rem; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .badge-grid { display: flex; gap: 15px; flex-wrap: wrap; margin-top: 1rem; }
+        .badge { background: #ebedef; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; font-weight: bold; }
+        .project-card { border-left: 5px solid var(--accent); padding-left: 15px; margin-bottom: 1.5rem; }
+        .btn { display: inline-block; background: var(--accent); color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        .social-links a { font-size: 1.5rem; margin: 0 10px; color: var(--primary); transition: 0.3s; }
+        .social-links a:hover { color: var(--accent); }
+    </style>
 </head>
-
 <body>
 
 <header>
-  <h1>RIGA</h1>
-  <span>Ranking de Impacto Glucémico de Alimentos</span>
+    <div class="hero">
+        <h1>[TU NOMBRE COMPLETO]</h1>
+        <p>Data Cleaning Specialist | Python & Pandas Expert</p>
+        <div class="social-links">
+            <a href="[LINK-LINKEDIN]"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com[TU-USUARIO]"><i class="fab fa-github"></i></a>
+            <a href="[LINK-WORKANA]"><i class="fas fa-briefcase"></i></a>
+        </div>
+    </div>
 </header>
 
-<main>
-  <section class="intro">
-    <p>
-      RIGA es una herramienta web gratuita que permite orientar elecciones
-      alimentarias a partir del impacto glucémico estimado de los alimentos.
-    </p>
-    <p>
-      Está pensada para salud pública, educación y acompañamiento en contextos
-      de obesidad, diabetes y enfermedades metabólicas.
-     
-    <p>
-     <strong> Qué es el Índice Glucémico?</strong>
-     </p>
-		
-     <p>
-      El índice glucémico (IG) indica qué tan rápido un alimento eleva el azúcar en sangre después de consumirlo.
-     </p>
-      <p> 
-      Los alimentos con IG alto provocan picos rápidos de glucosa e insulina.
-      Los de IG medio generan una respuesta moderada.
-      Los de IG bajo producen una subida más lenta y estable.
-
-      Mantener una respuesta glucémica más estable puede ayudar a mejorar el control del apetito, la energía diaria            y la salud metabólica, especialmente en personas con obesidad, prediabetes o diabetes.
-      </p>
-     <p> 
-     RIGA clasifica los alimentos según su impacto glucémico para ayudarte a elegir mejor.
-     </p>
-     <p>
-  <strong>¿Qué efectos tienen los picos de glucosa e insulina en el cuerpo?</strong>
-     </p>
-     <p>
- Hacen que el azúcar en sangre suba y baje muy rápido, obligando al cuerpo a responder de forma intensa y repetida.
-Con el tiempo, estos picos pueden aumentar el hambre, favorecer el aumento de peso y aumentar el riesgo de diabetes tipo 2 y enfermedades cardiovasculares.
-     </p>   
-
-
-
-
-<svg viewBox="0 0 520 330" width="100%" max-width="520">
-
-  <!-- Ejes -->
-  <line x1="60" y1="30" x2="60" y2="260" stroke="#333"/>
-  <line x1="60" y1="260" x2="480" y2="260" stroke="#333"/>
-
-  <!-- Etiquetas eje Y -->
-  <text x="-30" y="150" font-size="12" transform="rotate(-90 30 150)">
-    Nivel de glucosa en sangre
-  </text>
-
-  <!-- Etiquetas eje X -->
-  <text x="200" y="310" font-size="12">
-    Tiempo después de la ingesta
-  </text>
-
-  <!-- Marcas de tiempo eje X -->
-  <text x="55" y="280" font-size="10">0</text>
-  <text x="155" y="280" font-size="10">30 min</text>
-  <text x="275" y="280" font-size="10">1 h</text>
-  <text x="415" y="280" font-size="10">2 h</text>
-
-  <!-- Curva IG alto (rojo) -->
-  <path d="M60 260 C140 60, 230 60, 360 260"
-        fill="none" stroke="#e53935" stroke-width="3"/>
-
-  <!-- Curva IG medio (amarillo) -->
-  <path d="M60 260 C170 140, 270 140, 390 260"
-        fill="none" stroke="#fbc02d" stroke-width="3"/>
-
-  <!-- Curva IG bajo (verde) -->
-  <path d="M60 260 C200 200, 320 200, 450 260"
-        fill="none" stroke="#43a047" stroke-width="3"/>
-
-  <!-- Leyenda -->
-  <circle cx="90" cy="30" r="5" fill="#e53935"/>
-  <text x="105" y="34" font-size="12">IG alto</text>
-
-  <circle cx="170" cy="30" r="5" fill="#fbc02d"/>
-  <text x="185" y="34" font-size="12">IG medio</text>
-
-  <circle cx="270" cy="30" r="5" fill="#43a047"/>
-  <text x="285" y="34" font-size="12">IG bajo</text>
-
-</svg>
-
-
-  </section>
-
-  <section>
-    <div class="buscador">
-      <input
-        type="text"
-        placeholder="Buscar alimento…"
-        oninput="buscar(this.value)"
-      />
+<div class="container">
+    <!-- Sobre Mí -->
+    <div class="section">
+        <h2><i class="fas fa-user"></i> Sobre mí</h2>
+        <p>Especialista en la preparación y normalización masiva de datos. Ayudo a Data Scientists y empresas a ahorrar el 80% de su tiempo automatizando la limpieza de bases de datos complejas mediante scripts de Python.</p>
+        <div class="badge-grid">
+            <span class="badge">Python</span>
+            <span class="badge">Pandas</span>
+            <span class="badge">Data Wrangling</span>
+            <span class="badge">Excel Avanzado</span>
+            <span class="badge">SQL</span>
+        </div>
     </div>
 
-    <div id="resultados"></div>
-  </section>
-</main>
+    <!-- Proyectos Destacados -->
+    <div class="section">
+        <h2><i class="fas fa-code"></i> Proyectos de Portafolio</h2>
+        
+        <div class="project-card">
+            <h3>Limpieza Masiva de Base de Ventas (500k registros)</h3>
+            <p>Normalización de 100 columnas, tratamiento de nulos y estandarización de nomenclaturas geográficas utilizando Pandas.</p>
+            <a href="[LINK-A-TU-REPOSITORIO]" class="btn">Ver Código en GitHub</a>
+        </div>
 
-<footer>
-  RIGA es una herramienta informativa y educativa.
-  No reemplaza el asesoramiento médico ni nutricional.
-</footer>
+        <div class="project-card">
+            <h3>Script de Automatización de Nomenclatura</h3>
+            <p>Desarrollo de un diccionario inteligente para corrección de errores tipográficos en nombres de ciudades y países.</p>
+            <a href="#" class="btn">Ver Repositorio</a>
+        </div>
+    </div>
 
-<script>
-  const alimentos = [
-    { nombre: "Manzana", color: "verde", estrellas: 3 },
-    { nombre: "Pan integral", color: "amarillo", estrellas: 2 },
-    { nombre: "Arroz blanco", color: "rojo", estrellas: 1 }
-  ];
+    <!-- Certificaciones -->
+    <div class="section">
+        <h2><i class="fas fa-certificate"></i> Certificaciones</h2>
+        <p>Validadas en <strong>Credly</strong>:</p>
+        <ul>
+            <li><a href="[LINK-CREDLY-1]">Nombre de la Certificación 1</a></li>
+            <li><a href="[LINK-CREDLY-2]">Nombre de la Certificación 2</a></li>
+        </ul>
+    </div>
 
-  function buscar(texto) {
-    const cont = document.getElementById("resultados");
-    cont.innerHTML = "";
+    <!-- Contacto -->
+    <div class="section" style="text-align: center;">
+        <h2>¿Tenés una base de datos "sucia"?</h2>
+        <p>Estoy disponible para proyectos en Workana o colaboraciones directas.</p>
+        <a href="mailto:tu-email@gmail.com" class="btn" style="background: #27ae60;">Enviame un Mail</a>
+    </div>
+</div>
 
-    alimentos
-      .filter(a => a.nombre.toLowerCase().includes(texto.toLowerCase()))
-      .forEach(a => {
-        const div = document.createElement("div");
-        div.className = "resultado";
-        div.innerHTML = `
-          <strong>${a.nombre}</strong><br>
-          <span class="${a.color}">
-            ${a.color === "verde" ? "🟢" : a.color === "amarillo" ? "🟡" : "🔴"}
-            ${"★".repeat(a.estrellas)}
-          </span>
-        `;
-        cont.appendChild(div);
-      });
-  }
-</script>
 </body>
 </html>
