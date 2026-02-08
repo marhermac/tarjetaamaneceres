@@ -31,5 +31,27 @@ En este repositorio encontrarás el script de limpieza que soluciona:
 2. Instala las dependencias: `pip install pandas openpyxl`
 3. Ejecuta el notebook o el script `.py`.
 
+## 📊 Resultado del proceso de limpieza
+
+<p align="center">
+  <img src="images/Captura de pantalla 2026-02-08 164456 dirty data before.png" width="600">
+</p>
+
+
+
+[Vista previa del dataset limpio](images/Captura de pantalla 2026-02-08 164456 dirty data before.png)
+
+<p align="center">
+  <img src="images/Captura de pantalla 2026-02-08 164923 clean data after.png" width="600">
+</p>
+
+
+
+![Vista previa del dataset limpio](images/Captura de pantalla 2026-02-08 164923 clean data after.png)
+
+
+
+
+
 ---
 
