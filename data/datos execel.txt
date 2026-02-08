@@ -1,0 +1,57 @@
+ID;Prod;Val En (kcal);Carb (g);Azúc (g);Prot (g);Gras Tot (g);Fib (g);Na (mg)
+001;Acelga;19;3.7;1.1;1.8;0.2;1.6;179
+002;Albahaca;23;2.7;0.3;3.2;0.6;1.6;4
+003;Berro;11;1.3;0.2;2.3;0.1;0.5;41
+004;Canónigos;21;3.6;0.1;2.0;0.4;1.5;4
+005;Cilantro;23;3.7;0.9;2.1;0.5;2.8;46
+006;Escarola;17;3.4;0.2;1.3;0.2;3.1;22
+007;Espinaca;23;3.6;0.4;2.9;0.4;2.2;79
+008;Grelos;32;3.0;0.5;3.0;0.3;3.9;20
+009;Hojas de remolacha;22;4.3;0.5;2.2;0.1;3.7;226
+010;Kale;49;8.8;2.3;4.3;0.9;3.6;38
+011;Lechuga (promedio);15;2.9;0.8;1.4;0.2;1.3;28
+012;Menta;70;14.9;0.0;3.8;0.9;8.0;31
+013;Pak choi;13;2.2;1.2;1.5;0.2;1.0;65
+014;Perejil;36;6.3;0.8;3.0;0.8;3.3;56
+015;Repollo blanco;25;5.8;3.2;1.3;0.1;2.5;18
+016;Rúcula;25;3.7;2.1;2.6;0.7;1.6;27
+017;Verdolaga;16;3.4;0.1;1.3;0.1;0.9;45
+
+ESTADO,PROCESOS, ASOCIADOS
+CRUDO, Natural, Molido, Picado, Prensado en frío
+COCIDO, Hervido, Al Vapor, Horneado, Asado, Frito, Grillado, Salteado
+ELABORADO, Seco, Deshidratado, Fermentado, Enlatado, Curado, Ultraprocesado
+
+Medida Casera	,Peso/Volumen (g o ml)
+1 Taza (té)	,200
+1 Taza (desayuno/grande),	250
+1 Vaso	,200
+1 Cucharada sopera,	15
+1 Cucharadita (té),	5
+1 Cucharadita (café),	2
+1 Cucharón de cocina,	150
+1 Rebanada (pan de molde),	28
+1 Galletita (agua/salada),	6
+1 Feta (queso/jamón),	15
+1 Huevo,50
+1 Unidad (fruta mediana),	150
+1 Unidad (fruta pequeña),	80
+1 Unidad (pan mignon),	50
+1 Puñado (frutos secos),30
+
+
+Medida Casera	Peso Equivalente (g)	Uso sugerido
+Taza Hojas Crudas	50	Para lechuga, acelga, espinaca (cruda).
+Taza Hojas Cocidas	150	Para acelga o espinaca hervida/escachada.
+Taza Vegetales Picados	150	Para zanahoria, zapallito o cubos de calabaza.
+
+
+
+
+ID	Categoría	Sub Cat	Estado	Proceso	Producto	Val En (kcal)	Carb (g)	Prot (g)	Gras Tot (g)	Na (mg)
+14	Harinas	Trigo	Crudo	Molido	Harina 000	354	74.0	9.6	1.0	2
+15	Cereales	Arroz	Elaborado	Seco	Arroz Blanco	358	79.0	6.5	0.6	5
+16	Cereales	Arroz	Cocido	Hervido	Arroz Blanco	130	28.0	2.4	0.2	1
+17	Pastas	Seca	Elaborado	Seco	Fideos (Trigo)	370	75.0	12.0	1.5	10
+18	Pastas	Seca	Cocido	Hervido	Fideos (Trigo)	158	30.0	5.8	0.9	5
+19	Snacks	Galletitas	Elaborado	Horneado	Galletas Agua	440	65.0	10.0	14.0	500

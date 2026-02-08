@@ -1,0 +1,19 @@
+grupo,porcion_g,descripcion
+verduras,200,1 plato de verduras
+frutas,150,1 fruta mediana
+legumbres,150,1 plato de legumbres cocidas
+tuberculos,150,1 papa o batata mediana
+cereales,60,1 taza de arroz o fideos cocidos
+panificados,50,1 unidad de pan o similar
+carnes,120,1 bife o pechuga chica
+pescados,150,1 filet mediano
+huevos,60,1 huevo
+lacteos,200,1 vaso de leche o yogur
+quesos,30,1 feta
+aceites,10,1 cucharada
+frutos_secos,30,1 puñado
+azucares,10,1 cucharada
+dulces,40,1 porción chica
+bebidas,250,1 vaso
+ultraprocesados,50,1 porción estándar
+
