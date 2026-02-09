@@ -34,20 +34,21 @@ En este repositorio encontrarás el script de limpieza que soluciona:
 ## 📊 Resultado del proceso de limpieza
 
 <p align="center">
-  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/dirty%20data%20before.png" width="600">
+  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/dirty_data_before.png" width="600">
 </p>
 
 
 
-[Vista previa del dataset limpio](images/dirty data before.png)
+[Vista previa del dataset Sucio](images/dirty_data_before.png)
 
 <p align="center">
-  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/clean%20data%20after.png" width="600">
+  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/clear_dat_after.png" width="600">
 </p>
 
 
 
-[Vista previa del dataset limpio](images/clean data after.png)
+[Vista previa del dataset limpio](images/clean_data_after.png)
+
 
 
 
