@@ -149,7 +149,7 @@ Estos outputs permiten construir dashboards en **Power BI o Tableau** para segui
  Dataset original (mail_quejas_raw)
 <p align="center"> <img src="imagenes/mails_quejas_raw.png" width="650"> </p>
 Dataset limpieza2 (datos limpios)
-<p align="center"> <img src="imagenes/mail_limpieza_paso2.png" width="650"> </p>
+<p align="center"> <img src="imagenes/mails_limpios_paso2.png" width="650"> </p>
 Ouput ranking_quejas (datos limpios)
 <p align="center"> <img src="imagenes/ranking_quejas.png" width="650"> </p>
    
