@@ -42,7 +42,7 @@ En este repositorio encontrarás el script de limpieza que soluciona:
 [Vista previa del dataset Sucio](images/dirty_data_before.png)
 
 <p align="center">
-  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/clear_dat_after.png" width="600">
+  <img src="https://github.com/marhermac/mariomaciel/blob/main/proyectos/limpieza-ecommerce/imagenes/clear_data_after.png" width="600">
 </p>
 
 
