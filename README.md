@@ -4,7 +4,7 @@
 
 Soy un profesional enfocado en el **trabajo técnico que la mayoría de los analistas evita**: preparar datos crudos para que sean útiles. Mi objetivo es asegurar que los datos estén **limpios, consistentes y listos para análisis, modelos de Machine Learning o BI**.
 
-Desarrollo pipelines automáticos de **Data Cleaning y ETL** usando **Python, Pandas y técnicas avanzadas de validación**, con un enfoque en mantener la **integridad y calidad total de los datos**. :contentReference[oaicite:1]{index=1}
+Desarrollo pipelines automáticos de **Data Cleaning y ETL** usando **Python, Pandas y técnicas avanzadas de validación**, con un enfoque en mantener la **integridad y calidad total de los datos**. 
 
 ---
 
@@ -64,7 +64,7 @@ Estoy abierto a nuevas oportunidades donde pueda aportar valor a través del **a
 
 ## 💡 Sobre mí
 
-Me apasiona transformar datos complejos en estructuras útiles y confiables, automatizando tareas repetitivas y asegurando que los datasets estén listos para análisis avanzados, modelos predictivos o visualizaciones. Trabajo con atención al detalle y siempre buscando procesos reproducibles y eficientes.Tengo 25 años de experiencia como analista de inverntarios trabajando con **Excel,csv,Bases de datos**+
+Me apasiona transformar datos complejos en estructuras útiles y confiables, automatizando tareas repetitivas y asegurando que los datasets estén listos para análisis avanzados, modelos predictivos o visualizaciones. Trabajo con atención al detalle y siempre buscando procesos reproducibles y eficientes.Tengo 25 años de experiencia como **Analista de inventarios** trabajando con **Microsft Excel,csv,Bases de datos**,llevando mi experiencia mas la adquisicion de nuevos conocimentos al rol  **Analista de datos**
 ---
 
 > ⚡ _Este README resume quién soy y qué hago como Data Analyst especializado en preparación de datos. Cualquier recruiter o colega podrá entender mi enfoque, habilidades y qué tipo de proyectos he desarrollado._
