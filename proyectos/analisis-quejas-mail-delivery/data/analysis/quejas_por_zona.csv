@@ -1,0 +1,41 @@
+zona,tipo_queja,cantidad
+Escobar,Cobro o facturación,1
+Escobar,Otros,3
+Escobar,Pedido incompleto,1
+Escobar,Retraso en la entrega,2
+José C. Paz,Cobro o facturación,1
+José C. Paz,Otros,3
+José C. Paz,Pedido incompleto,1
+José C. Paz,Problemas con el repartidor,2
+José C. Paz,Retraso en la entrega,3
+Malvinas Argentinas,Cobro o facturación,2
+Malvinas Argentinas,Otros,7
+Malvinas Argentinas,Pedido incompleto,3
+Malvinas Argentinas,Problemas con el repartidor,2
+Malvinas Argentinas,Retraso en la entrega,1
+San Fernando,Cobro o facturación,1
+San Fernando,Otros,2
+San Fernando,Pedido incompleto,2
+San Fernando,Retraso en la entrega,3
+San Isidro,Cobro o facturación,1
+San Isidro,Otros,1
+San Isidro,Pedido incompleto,4
+San Isidro,Retraso en la entrega,3
+San Martín,Cobro o facturación,1
+San Martín,Otros,2
+San Martín,Pedido incompleto,2
+San Martín,Problemas con el repartidor,1
+San Martín,Retraso en la entrega,5
+San Miguel,Cobro o facturación,1
+San Miguel,Otros,4
+San Miguel,Pedido incompleto,2
+San Miguel,Retraso en la entrega,2
+Tigre,Cobro o facturación,1
+Tigre,Otros,3
+Tigre,Pedido incompleto,1
+Tigre,Problemas con el repartidor,2
+Tigre,Retraso en la entrega,5
+Vicente López,Cobro o facturación,3
+Vicente López,Otros,3
+Vicente López,Pedido incompleto,1
+Vicente López,Retraso en la entrega,4

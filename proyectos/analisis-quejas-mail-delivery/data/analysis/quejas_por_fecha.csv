@@ -1,0 +1,78 @@
+fecha,tipo_queja,cantidad
+2025-01-01,Otros,1
+2025-01-01,Retraso en la entrega,1
+2025-01-03,Otros,1
+2025-01-04,Pedido incompleto,1
+2025-01-05,Cobro o facturación,1
+2025-01-05,Otros,1
+2025-02-02,Problemas con el repartidor,1
+2025-02-03,Cobro o facturación,1
+2025-02-03,Problemas con el repartidor,1
+2025-02-03,Retraso en la entrega,1
+2025-02-04,Otros,1
+2025-02-04,Retraso en la entrega,2
+2025-02-06,Pedido incompleto,1
+2025-02-06,Retraso en la entrega,1
+2025-03-01,Cobro o facturación,1
+2025-03-02,Otros,1
+2025-03-02,Pedido incompleto,1
+2025-03-02,Retraso en la entrega,1
+2025-03-03,Cobro o facturación,2
+2025-03-03,Otros,1
+2025-03-04,Otros,1
+2025-03-04,Retraso en la entrega,1
+2025-03-05,Otros,1
+2025-03-06,Pedido incompleto,1
+2025-04-01,Cobro o facturación,1
+2025-04-01,Pedido incompleto,1
+2025-04-02,Otros,1
+2025-04-02,Pedido incompleto,1
+2025-04-03,Retraso en la entrega,1
+2025-04-04,Otros,1
+2025-04-06,Cobro o facturación,2
+2025-04-06,Otros,1
+2025-04-06,Pedido incompleto,1
+2025-04-06,Retraso en la entrega,1
+2025-05-01,Retraso en la entrega,2
+2025-05-02,Otros,2
+2025-05-03,Problemas con el repartidor,1
+2025-05-03,Retraso en la entrega,2
+2025-05-04,Problemas con el repartidor,1
+2025-05-06,Pedido incompleto,1
+2025-06-01,Otros,1
+2025-06-01,Problemas con el repartidor,1
+2025-06-01,Retraso en la entrega,1
+2025-06-02,Retraso en la entrega,2
+2025-06-03,Otros,1
+2025-06-04,Otros,1
+2025-06-04,Retraso en la entrega,1
+2025-06-06,Pedido incompleto,2
+2025-06-06,Problemas con el repartidor,1
+2025-07-01,Pedido incompleto,1
+2025-07-01,Retraso en la entrega,1
+2025-07-02,Retraso en la entrega,1
+2025-07-04,Pedido incompleto,1
+2025-07-05,Pedido incompleto,1
+2025-08-01,Otros,1
+2025-08-03,Cobro o facturación,1
+2025-08-03,Otros,1
+2025-08-05,Cobro o facturación,1
+2025-08-06,Retraso en la entrega,3
+2025-09-01,Pedido incompleto,1
+2025-09-02,Otros,1
+2025-09-04,Retraso en la entrega,1
+2025-10-01,Pedido incompleto,1
+2025-10-02,Otros,1
+2025-10-06,Cobro o facturación,1
+2025-10-06,Otros,3
+2025-10-06,Retraso en la entrega,1
+2025-11-01,Pedido incompleto,1
+2025-11-02,Retraso en la entrega,2
+2025-11-04,Cobro o facturación,1
+2025-11-05,Otros,1
+2025-11-06,Otros,2
+2025-12-02,Otros,1
+2025-12-02,Pedido incompleto,1
+2025-12-04,Otros,1
+2025-12-04,Retraso en la entrega,2
+2025-12-06,Problemas con el repartidor,1
