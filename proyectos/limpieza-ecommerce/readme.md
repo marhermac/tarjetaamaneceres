@@ -47,7 +47,7 @@ En este repositorio encontrarás el script de limpieza que soluciona:
 
 
 
-[Vista previa del dataset limpio](imagenes/clean_data_after.png)
+[Vista previa del dataset limpio](imagenes/clear_data_after.png)
 
 
 
