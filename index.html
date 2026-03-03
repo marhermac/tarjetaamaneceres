@@ -95,19 +95,58 @@
             margin-top: 1rem;
         }
 
-        .social-links a {
-            color: var(--text-muted);
-            font-size: 1.75rem;
-            margin: 0 15px;
-            transition: color 0.2s;
-        }
+      /* Contenedor principal de los iconos */
+.social-links {
+    display: flex;
+    justify-content: center;
+}
 
-        .social-links a {
-    color: #0077b5; /* Azul LinkedIn por ejemplo */
-    font-size: 24px;
-    margin: 0 10px;
+/* Estilo unificado para los enlaces (iconos) */
+.social-links a.social-icon {
+    color: #0077b5; /* Tu color preferido */
+    font-size: 1.75rem;
+    margin: 0 15px;
     text-decoration: none;
-        }
+    position: relative; /* Necesario para ubicar la etiqueta */
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+/* Estilo de la etiqueta (OCULTA por defecto) */
+.social-links .tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: auto;
+    background-color: #333; /* Fondo oscuro de la etiqueta */
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 10px;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    
+    /* Posicionamiento arriba del icono */
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; 
+    left: 50%;
+    transform: translateX(-50%);
+    
+    /* Animación de aparición */
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+/* MOSTRAR etiqueta al pasar el mouse */
+.social-links a.social-icon:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Cambio de color del icono al pasar el mouse */
+.social-links a.social-icon:hover {
+    color: var(--text-muted, #555);
+}
+
 
 
         .social-links a:hover {
@@ -135,13 +174,29 @@
         <h1>MARIO H. MACIEL</h1>
         <p>Analista de Datos enfocado en limpieza, normalización y automatización de datasets reales
         Transformo datos desordenados en información confiable para análisis, reportes y toma de decisiones.
+        </p>
+            
+            <div class="social-links">
+  <!-- Repite esta estructura para cada icono -->
+              <a href="https://linkedin.com/in/marmaciel"class="social-icon">
+                <i class="fab fa-linkedin"></i> <!-- Tu icono actual -->
+                 <span class="tooltip-text">LinkedIn</span> <!-- La etiqueta que aparecerá -->
+                  </a>
+
+               <a href="proyectos/cv/MARIO_MACIEL_cv.pdf" class="social-icon">
+                 <i class="fa-solid fa-file-pdf"></i>
+                  <span class="tooltip-text">Curriculum Vitae</span>
+                </a>
+
+                <a href="mailto:mario.maciel.tech@outlook.es?subject=Contacto%20desde%20tu%20portfolio" class="social-icon">
+                 <i class="fas fa-envelope"></i>
+                  <span class="tooltip-text">Correo</span>
+                </a> 
 
             </p>
-             <div class="social-links">
-            <a href="https://linkedin.com/in/marmaciel"><i class="fab fa-linkedin"></i></a>
-            <a href="proyectos/CV/MARIO_MACIEL_cv.pdf"><i class="fa-solid fa-file-pdf"></i></a>
-            <a href="https://www.workana.com/es/talent/profile"><i class="fas fa-briefcase"></i></a>
-            <a href="mailto:mario.maciel.tech@outlook.es?subject=Contacto%20desde%20tu%20portfolio"><i class="fas fa-envelope"></i></a>
+            
+</div>
+
         </div>
     </div>
 </header>
