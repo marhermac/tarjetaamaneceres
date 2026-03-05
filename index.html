@@ -162,7 +162,26 @@
             font-weight: 500;
             margin-right: 5px;
         }
-    </style>
+
+        .badges-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.badges-container iframe {
+  width: 200px;
+  height: 270px;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.badges-container iframe:hover {
+  transform: scale(1.05);
+}
+</style>
 </head>
 <body>
 
@@ -289,16 +308,41 @@ I'm interested in collaborating on projects where data needs order, structure, a
     </div>
     
     </div>
-    <div class="section">
-    <h2><i class="fas fa-certificate"></i> Certificaciones Ministerio de Educacion Ciudad Autonoma de Buenos Aires </h2>
-        <p>Certificaciones oficiales obtenidas a través de <strong>Construi tu futuro</strong> | <p> Official certifications obtained through <strong>Construi tu futuro</strong>:</p>  
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1100314/pic/embed" width="200" height="270"></iframe> 
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1100303/pic/embed" width="200" height="270"></iframe>
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1100302/pic/embed" width="200" height="270"></iframe>
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1100301/pic/embed" width="200" height="270"></iframe>
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1084990/pic/embed" width="200" height="270"></iframe>
-        <iframe  frameborder="0"  scrolling="no" src="https://openbadgepassport.com/app/badge/info/1102162/pic/embed" width="200" height="270"></iframe>  
+   <div class="section">
+  <h2>
+    <i class="fas fa-certificate"></i> 
+    Certificaciones – Ministerio de Educación | Ciudad Autónoma de Buenos Aires
+  </h2>
 
+  <p>
+    Certificaciones oficiales obtenidas a través de 
+    <strong>Construí tu Futuro</strong> |
+    Official certifications obtained through 
+    <strong>Construí tu Futuro</strong>
+  </p>
+
+  <div class="badges-container">
+    
+    <iframe src="https://openbadgepassport.com/app/badge/info/1100314/pic/embed"
+      loading="lazy"></iframe>
+
+    <iframe src="https://openbadgepassport.com/app/badge/info/1100303/pic/embed"
+      loading="lazy"></iframe>
+
+    <iframe src="https://openbadgepassport.com/app/badge/info/1100302/pic/embed"
+      loading="lazy"></iframe>
+
+    <iframe src="https://openbadgepassport.com/app/badge/info/1100301/pic/embed"
+      loading="lazy"></iframe>
+
+    <iframe src="https://openbadgepassport.com/app/badge/info/1084990/pic/embed"
+      loading="lazy"></iframe>
+
+    <iframe src="https://openbadgepassport.com/app/badge/info/1102162/pic/embed"
+      loading="lazy"></iframe>
+
+  </div>
+</div>
 	
 	</div>    
             
@@ -323,6 +367,7 @@ I'm interested in collaborating on projects where data needs order, structure, a
 
 <!-- SCRIPT DE CREDLY (Carga una sola vez para todos los badges) -->
 <script type="text/javascript" async src="//://cdn.credly.com"></script>
+
 
 </body>
 </html>
